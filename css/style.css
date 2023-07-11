@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html:hover {
+	cursor: url(../img/cursor.png), auto;
+}
+
+button:hover {
+	cursor: url(../img/cursor.png), auto;
+}
+
+html:active {
+	cursor: url(../img/cursor-2.png), auto;
+}
+
+button:active {
+	cursor: url(../img/cursor-2.png), auto;
+}
+
+body {
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+		Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+nav {
+	margin: 0 auto;
+}
+
+.menu {
+	display: none;
+}
+
+.navbar {
+	height: 80px;
+}
+
+i {
+	font-size: 30px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.menu {
+		display: block;
+	}
+
+	.nav-list {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 1);
+		padding: 0.5rem;
+	}
+
+	.nav-list.active {
+		display: block;
+	}
+}
